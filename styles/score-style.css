@@ -1,12 +1,13 @@
-h1 {
-    margin-left: 425px;
-    margin-top: 275px;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.container {
+    text-align: center;
 }
-
-.btnscr {
-    margin-left: 645px;
-}
-
 * {
     box-sizing: border-box;
 }
