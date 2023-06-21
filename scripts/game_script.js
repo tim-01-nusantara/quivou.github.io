@@ -22,6 +22,7 @@ const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let listAnswer = [];
 
 function startQuiz(){
     currentQuestionIndex = 0;
@@ -61,6 +62,7 @@ function resetState(){
 
 function selectAnswer(e){
     const selectedBtn = e.target;
+    listAnswer.push(selectedBtn.innerHTML);
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
         selectedBtn.classList.add("correct");
@@ -83,7 +85,12 @@ function handleNextButton(){
     if(currentQuestionIndex < questions.length){
         showQuestion();
     }else{
-        window.location.href = "score.html?score=" + score;
+        const urlParams = new URLSearchParams();
+        urlParams.set("listAnswer", listAnswer.join(","));
+        urlParams.set("score", score);
+
+        const url = "score.html?" + urlParams.toString();
+        window.location.href = url;
     }
 }
 
