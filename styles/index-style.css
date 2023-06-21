@@ -5,10 +5,7 @@ body {
 	margin: 0;
 	padding: 0;
   }
-/*.quivou {
-	list-style: none;
-	font-weight: bold;
-}*/
+
 
 .button {
 	background-color: #ffe500;
@@ -36,8 +33,6 @@ body {
  }
  .container.about{
 	display: inline-block;
-	/* margin-left: 25%; */
-	/* margin: auto 0; */
 	padding: 20px 20px;
 	width: 30%;
     border: none;
@@ -45,10 +40,6 @@ body {
     border-radius: 20px;
 	
  }
- /*.quivou{
-	position: relative;
-	right: 25%;
- }*/
  
    p{
 	width: 200px;
@@ -128,7 +119,6 @@ body {
 
 .container{
 	position: relative;
-	/* right: 25%; */
 }
   .button{
 	position: relative;
@@ -140,7 +130,6 @@ body {
   }
   h2{
 	position: relative;
-	/* left: 5.2%; */
 	font-size: 30px;
     font-family: Arial, sans-serif;
   }
@@ -172,7 +161,6 @@ body {
   a{
 	position: relative;
 	text-align: center;
-	/* left: 40%; */
 	
   }
   a.lm{
@@ -207,11 +195,7 @@ li {
   li a:hover {
 	color: #ff0000;
   }
-  /*p {
-	text-align: left;
-	font-size: 15px;
-
-  }*/
+  
   .coba {
 	width: 250px;
 	font-weight: bold;
@@ -239,8 +223,4 @@ li {
 	text-decoration: none;
 }
 
-/*ul li a:hover {
-    background-color: #ffe500;
-    color: #FFFFFF;
-	padding: 25px, 20px;
-}*/
+

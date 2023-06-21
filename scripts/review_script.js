@@ -26,8 +26,6 @@ const correctAnswerElement = document.getElementById('correct-answer');
 const wrongAnswerElement = document.getElementById('wrong-answer');
 
 scoreElement.innerText = "Your Score: " + score;
-// correctAnswerElement.innerText = "Correct Answer: " + 
-// wrongAnswerElement.innerText = "Wrong Answer: " + 
 
 questions.forEach((question, index) => {
         const questionDiv = document.createElement('div');
