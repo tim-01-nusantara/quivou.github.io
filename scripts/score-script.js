@@ -8,15 +8,11 @@ const urlParams = new URLSearchParams(window.location.search);
 const answerSelectedString = urlParams.get("listAnswer");
 const answerSelected = answerSelectedString.split(",");
 
-// const score = parseInt(urlParams.get("score"));
 const score = urlParams.get("score");
 
 openBtn.addEventListener("click", () => {
     modal.classList.add("open");
     finalScore.innerHTML = score;
-    // for (i = 0; i < answerSelected.length; i++) {
-    //     alert(answerSelected[i]);
-    // }
 });
 
 closeBtn.addEventListener("click", () => {
